@@ -1,0 +1,16 @@
+---
+language: node_js
+
+node_js:
+  - lts/*
+
+before_install:
+  - cd server/
+
+install:
+  - npm install
+  - bower install
+
+script:
+  - npm run lint
+  - npm test
